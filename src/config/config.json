@@ -1,23 +1,47 @@
 {
   "development": {
-    "username": "root",
-    "password": null,
-    "database": "itqan_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "avnadmin",
+    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "database": "defaultdb",
+     "port": 12891, 
+    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "dialect": "mysql",
+      "ssl": true,
+
+      "dialectOptions": {
+    "ssl": {
+      "require": true
+    }
+  }
   },
   "test": {
-    "username": "root",
-    "password": null,
-    "database": "itqan_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "avnadmin",
+    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "database": "defaultdb",
+     "port": 12891, 
+    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "dialect": "mysql",
+      "ssl": true,
+
+      "dialectOptions": {
+    "ssl": {
+      "require": true
+    }
+  }
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "itqan_db",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
+    "username": "avnadmin",
+    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "database": "defaultdb",
+     "port": 12891, 
+    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "dialect": "mysql",
+      "ssl": true,
+
+      "dialectOptions": {
+    "ssl": {
+      "require": true
+    }
+  }
   }
 }
