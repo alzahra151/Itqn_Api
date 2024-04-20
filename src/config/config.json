@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "password": null,
     "database": "defaultdb",
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
@@ -16,7 +16,7 @@
   },
   "test": {
     "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "password": null,
     "database": "defaultdb",
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
@@ -31,7 +31,7 @@
   },
   "production": {
     "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
+    "password": null,
     "database": "defaultdb",
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
