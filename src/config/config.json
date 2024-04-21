@@ -13,19 +13,6 @@
       "require": true
     }
   }
-    "username": "avnadmin",
-    "password": null,
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
-    "dialect": "mysql",
-      "ssl": true,
-
-      "dialectOptions": {
-    "ssl": {
-      "require": true
-    }
-  }
   },
   "test": {
     "username": "avnadmin",
@@ -41,34 +28,8 @@
       "require": true
     }
   }
-    "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
-    "dialect": "mysql",
-      "ssl": true,
-
-      "dialectOptions": {
-    "ssl": {
-      "require": true
-    }
-  }
   },
   "production": {
-    "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
-    "dialect": "mysql",
-      "ssl": true,
-
-      "dialectOptions": {
-    "ssl": {
-      "require": true
-    }
-  }
     "username": "avnadmin",
     "password": "AVNS_7AnUK7TWhetoPbSmGgF",
     "database": "defaultdb",
