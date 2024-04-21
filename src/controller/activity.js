@@ -12,6 +12,21 @@ async function getActivities(req, res, next) {
     }
 }
 
+async function addActitity(req, res, next) {
+    console.log(req.body)
+    const activityData = {
+        name,
+        description
+    } = req.body
+    try {
+        const activity = await db.activity.create(activityData)
+        res.status(200).json(activity)
+    } catch (error) {
+        next(error)
+    }
+}
+
 module.exports = {
-    getActivities
+    getActivities,
+    addActitity
 }

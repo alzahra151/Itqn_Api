@@ -4,6 +4,7 @@ const ApiError = require('../helpers/apiError');
 
 async function addExecutive_plan(req, res, next) {
 
+    const { stratigyPlanId } = req.params
     try {
         const executivePlansData = req.body;
         console.log(executivePlansData)
@@ -29,6 +30,8 @@ async function addExecutive_plan(req, res, next) {
                     Strategic_plan_id,
                     missions
                 } = execPlanData
+                Strategic_plan_id = +stratigyPlanId
+                console.log(Strategic_plan_id, stratigyPlanId)
                 // console.log(executive_planData)
                 const [activity, beneficiary, Strategic_plan] = await Promise.all([
                     db.activity.findOne({ where: { id: activity_id } }),
