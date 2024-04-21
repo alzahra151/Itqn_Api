@@ -35,10 +35,10 @@ async function deleteall(req, res) {
     try {
         await db.administration.destroy({
             where: {
-                id: 3
+                id: 1
             }
         });
-        console.log('All data deleted successfully');
+        console.log('All data deleted successfullyىءتتءا');
         res.json('done')
     } catch (err) {
         console.error('Error deleting data:', err);
