@@ -20,7 +20,8 @@ module.exports = (sequelize, DataTypes) => {
     job_number: DataTypes.INTEGER,
     ID_number: DataTypes.INTEGER,
     address: DataTypes.STRING,
-    gender: DataTypes.ENUM("maile", "femaile"),
+    // gender: DataTypes.ENUM("maile", "femaile"),
+    gender: DataTypes.STRING,
     age: DataTypes.INTEGER,
     mobile: DataTypes.STRING,
     image: DataTypes.STRING
