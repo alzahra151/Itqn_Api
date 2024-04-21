@@ -38,7 +38,7 @@ async function deleteall(req, res) {
                 id: 1
             }
         });
-        console.log('All data deleted successfullyىءتتءا');
+        console.log('All data deleted successfully');
         res.json('done')
     } catch (err) {
         console.error('Error deleting data:', err);
