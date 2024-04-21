@@ -28,7 +28,9 @@ app.use(express.urlencoded({ extended: true }));
 // app.use(translationMiddleware);
 
 app.use(routes);
-
+app.get('/wakeup', (req, res) => {
+    res.json('wake up')
+})
 app.use("*", (req, res, next) => {
     const error = new Error("METHOD NOT ALLOWED!!");
     next(error);
