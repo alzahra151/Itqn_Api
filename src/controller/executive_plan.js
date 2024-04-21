@@ -35,7 +35,7 @@ async function addExecutive_plan(req, res, next) {
                 // console.log(executive_planData)
                 const [activity, beneficiary, Strategic_plan] = await Promise.all([
                     db.activity.findOne({ where: { id: activity_id } }),
-                    db.beneficiary.findOne({ where: { id: beneficiary_id } }),
+                    db.beneficiary_category.findOne({ where: { id: beneficiary_id } }),
                     db.Strategic_plan.findOne({ where: { id: Strategic_plan_id } }),
                 ]);
                 if (!activity | !beneficiary | !Strategic_plan) {
@@ -67,7 +67,7 @@ async function addExecutive_plan(req, res, next) {
                 );
                 let executivePlanMessions = missions.map((mission) => ({
                     ...mission,
-                    executive_plan_id: executive_plan.id
+                    executive_plan_id: executive_plan.id,
                 }))
                 const createdMissions = await db.mission.bulkCreate(executivePlanMessions, {
                     transaction
@@ -119,8 +119,8 @@ async function getEcutivePlaneById(req, res, next) {
                     // ]
                 },
                 {
-                    model: db.beneficiary,
-                    as: "beneficiary",
+                    model: db.beneficiary_category,
+                    as: "beneficiary_category",
                     // include: [
                     //     {
                     //         model: db.goal,

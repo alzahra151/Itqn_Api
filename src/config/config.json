@@ -5,14 +5,7 @@
     "database": "defaultdb",
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
-    "dialect": "mysql",
-      "ssl": true,
-
-      "dialectOptions": {
-    "ssl": {
-      "require": true
-    }
-  }
+    "dialect": "mysql"
   },
   "test": {
     "username": "avnadmin",
@@ -21,11 +14,11 @@
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
     "dialect": "mysql",
-      "ssl": true,
+      "ssl": false,
 
       "dialectOptions": {
     "ssl": {
-      "require": true
+      "require": false
     }
   }
   },
@@ -36,11 +29,11 @@
      "port": 12891, 
     "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
     "dialect": "mysql",
-      "ssl": true,
+      "ssl": false,
 
       "dialectOptions": {
     "ssl": {
-      "require": true
+      "require": false
     }
   }
   }

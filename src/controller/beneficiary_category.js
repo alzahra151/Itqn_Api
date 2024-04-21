@@ -6,7 +6,7 @@ async function addBeneficiaryCategory(req, res, next) {
     console.log(req.body)
     const beneficiaryCateData = { title } = req.body
     try {
-        const beneficiaryCate = await db.beneficiary_category.create(beneficiaryCateData)
+        const beneficiaryCate = await db.beneficiary.create(beneficiaryCateData)
         res.status(200).json(beneficiaryCate)
     } catch (error) {
         next(error)

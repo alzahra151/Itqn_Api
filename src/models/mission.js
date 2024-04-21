@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     end_date: DataTypes.DATE,
     number_value: DataTypes.STRING,
     evaluation_method: DataTypes.STRING,
-    procedure: DataTypes.ENUM("accept", "implementation", "evaluation", "submit_reports"),
+    // procedure: DataTypes.ENUM("accept", "implementation", "evaluation", "submit_reports"),
+    procedure: DataTypes.STRING,
     procedure_date: DataTypes.DATE,
     description: DataTypes.STRING,
   }, {

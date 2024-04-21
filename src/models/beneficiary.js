@@ -12,8 +12,6 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       // beneficiary.belongsTo(models.executive_plan, { as: "executive_plan", foreignKey: "executive_plan_id" })
-      beneficiary.hasMany(models.executive_plan, { as: "executive_plans", foreignKey: "beneficiary_id" });
-
     }
   }
   beneficiary.init({

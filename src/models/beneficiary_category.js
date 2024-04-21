@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      beneficiary_category.hasMany(models.executive_plan, { as: "executive_plans", foreignKey: "beneficiary_id" });
     }
   }
   beneficiary_category.init({

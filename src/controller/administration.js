@@ -31,8 +31,23 @@ async function getAdminstrations(req, res, next) {
         next(error)
     }
 }
+async function deleteall(req, res) {
+    try {
+        await db.administration.destroy({
+            where: {
+                id: 3
+            }
+        });
+        console.log('All data deleted successfully');
+        res.json('done')
+    } catch (err) {
+        console.error('Error deleting data:', err);
+        res.json('fail')
+    }
+}
 
 module.exports = {
     addAdministration,
-    getAdminstrations
+    getAdminstrations,
+    deleteall
 }
