@@ -1,18 +1,16 @@
 {
   "development": {
-    "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "username": "alzahraa",
+    "password": "Itqan@1234",
+    "database": "itqandb",
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "username": "alzahraa",
+    "password": "Itqan@1234",
+    "database": "itqandb",
+    "host": "127.0.0.1",
     "dialect": "mysql",
       "ssl": false,
 
@@ -23,11 +21,10 @@
   }
   },
   "production": {
-    "username": "avnadmin",
-    "password": "AVNS_7AnUK7TWhetoPbSmGgF",
-    "database": "defaultdb",
-     "port": 12891, 
-    "host": "itqandb-alzahradesoky-ceab.d.aivencloud.com",
+    "username": "alzahraa",
+    "password": "Itqan@1234",
+    "database": "itqandb",
+    "host": "127.0.0.1",
     "dialect": "mysql",
       "ssl": false,
 

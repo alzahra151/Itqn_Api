@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // define association here
       employee.belongsTo(models.department, { as: "department", foreignKey: "department_id" })
-      employee.hasMany(models.mission, { as: "missions", foreignKey: "administration_id" });
+      employee.hasMany(models.mission, { as: "missions", foreignKey: "employee_id" });
     }
   }
   employee.init({
@@ -24,7 +24,8 @@ module.exports = (sequelize, DataTypes) => {
     gender: DataTypes.STRING,
     age: DataTypes.INTEGER,
     mobile: DataTypes.STRING,
-    image: DataTypes.STRING
+    image: DataTypes.STRING,
+    department_id: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'employee',

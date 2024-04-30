@@ -13,7 +13,6 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       administration.hasMany(models.department, { as: "departments", foreignKey: "administration_id" });
       administration.hasMany(models.mission, { as: "missions", foreignKey: "administration_id" });
-
       // administration.belongsTo(models.mission, { as: "mission", foreignKey: "mission_id" })
     }
   }

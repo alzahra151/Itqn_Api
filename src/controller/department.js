@@ -25,7 +25,36 @@ async function getDepartments(req, res, next) {
         next(error)
     }
 }
+async function deleteDeparment(req, res, next) {
+    const { id } = req.params
+    try {
+        const department = await db.department.findByPk(id)
+        const { count, rows } = await db.employee.findAndCountAll({ where: { department_id: department.id } });
+        console.log(count)
+        if (count > 0) {
+            throw new Error('لا يمكن حذف القسم لارتباطه بعناصر اخري');
+        }
+        await department.destroy();
+        res.status(200).json('done')
+    } catch (error) {
+        next(error)
+    }
+}
+async function editDeparment(req, res, next) {
+    const { id } = req.params
+    const updatedData = req.body
+    try {
+        const department = await db.department.findByPk(id)
+        const updated = await department.update(updatedData)
+        await updated.save();
+        res.status(200).json(updated)
+    } catch (error) {
+        next(error)
+    }
+}
 module.exports = {
     addDepartment,
-    getDepartments
+    getDepartments,
+    deleteDeparment,
+    editDeparment
 }

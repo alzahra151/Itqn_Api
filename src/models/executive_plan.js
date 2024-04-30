@@ -15,7 +15,6 @@ module.exports = (sequelize, DataTypes) => {
       executive_plan.belongsTo(models.beneficiary_category, { as: "beneficiary_category", foreignKey: "beneficiary_id" });
       executive_plan.belongsTo(models.Strategic_plan, { as: "Strategic_plan", foreignKey: "Strategic_plan_id" });
       executive_plan.belongsTo(models.goal, { as: "goal", foreignKey: "goal_id" });
-
       executive_plan.hasMany(models.mission, { as: "missions", foreignKey: "executive_plan_id" });
     }
   }

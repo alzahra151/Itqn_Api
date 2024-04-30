@@ -1,7 +1,6 @@
 'use strict';
-const {
-  Model, INTEGER
-} = require('sequelize');
+const { Model, INTEGER } = require('sequelize');
+const Employee = require('./employee');
 module.exports = (sequelize, DataTypes) => {
   class department extends Model {
     /**
@@ -13,8 +12,6 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
       department.belongsTo(models.administration, { as: "administration", foreignKey: "administration_id" });
       department.hasMany(models.employee, { as: "employees", foreignKey: "department_id" });
-
-
     }
   }
   department.init({
@@ -25,5 +22,6 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'department',
   });
+
   return department;
 };
